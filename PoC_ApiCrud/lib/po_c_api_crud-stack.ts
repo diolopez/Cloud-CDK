@@ -90,10 +90,10 @@ export class PoCApiCrudStack extends cdk.Stack {
   });
 
 
-/*new s3deploy.BucketDeployment(this, 'DeployFiles', {
-  sources: [s3deploy.Source.asset('./certs')],
-  destinationBucket: bucketS3,
-});*/
+  new s3deploy.BucketDeployment(this, 'DeployFiles', {  
+   sources: [s3deploy.Source.asset('./certs')],
+   destinationBucket: bucketS3,
+  });
 
   }
 }
