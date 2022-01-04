@@ -19,6 +19,7 @@ exports.handler = async (event, context) => {
             }
           })
           .promise();
+          body.context = context
         break;
         
       case "GET /items":
